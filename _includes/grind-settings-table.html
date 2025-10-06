@@ -1,0 +1,52 @@
+<style>
+  .grind-settings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  .grind-settings-table th,
+  .grind-settings-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  .grind-settings-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  .grind-settings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .grind-settings-table tr:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+
+<table class="grind-settings-table">
+  <thead>
+    <tr>
+      <th>Bean Name</th>
+      <th>Grinder</th>
+      <th>Grind Size</th>
+      <th>Burr Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for grinder in site.data.grind_settings %}
+      {% for bean in grinder[1].beans %}
+        <tr>
+          <td>{{ bean.name }}</td>
+          <td>
+            {% if grinder[1].hyperlink %}
+              <a href="{{ grinder[1].hyperlink }}">{{ grinder[1].name }}</a>
+            {% else %}
+              {{ grinder[1].name }}
+            {% endif %}
+          </td>
+          <td>{{ bean.grind_size }}</td>
+          <td>{{ bean.burr_size }}</td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
