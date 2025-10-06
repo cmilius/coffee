@@ -3,14 +3,14 @@ breville_barista_express:
   hyperlink: https://a.co/d/fssmft1
   beans:
     - name: Ethiopia Yirgacheffe
-      grind_size: fine
-      burr_size: 40mm
+      grind_size: 5
+      burr_size: 6
     - name: Colombia Supremo
-      grind_size: medium
-      burr_size: 40mm
+      grind_size: 4
+      burr_size: 6
     - name: Guatemala Antigua
-      grind_size: coarse
-      burr_size: 40mm
+      grind_size: 8
+      burr_size: 4
 ben_johnson:
   name: Ben Johnson
   hyperlink: https://benjohnsonstudio.com
