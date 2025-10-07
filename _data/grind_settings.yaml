@@ -4,10 +4,14 @@ breville_barista_express:
   beans:
     - name: Air Capital Blend
       roaster: The Roastrie
-      deception: A smooth, clean & mild flavor with a deep fruity & bold finish
+      description: A smooth, clean & mild flavor with a deep fruity & bold finish
+      roast: Medium
       grind_size: 5
       burr_size: 6
-    - name: Colombia Supremo
+    - name: Indian Monsooned Malabar
+      roaster: A Hill of Beans 
+      description: Mellow and low in acidity
+      roast: Medium
       grind_size: 4
       burr_size: 6
     - name: Guatemala Antigua
