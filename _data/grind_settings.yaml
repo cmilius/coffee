@@ -2,7 +2,9 @@ breville_barista_express:
   name: Breville Barista Express
   hyperlink: https://a.co/d/fssmft1
   beans:
-    - name: Ethiopia Yirgacheffe
+    - name: Air Capital Blend
+      roaster: The Roastrie
+      deception: A smooth, clean & mild flavor with a deep fruity & bold finish
       grind_size: 5
       burr_size: 6
     - name: Colombia Supremo
